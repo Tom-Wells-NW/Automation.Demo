@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documentation", "_Documentation", "{EED74AFF-E9A0-4087-ABAB-F4DB0F1C5351}"
 	ProjectSection(SolutionItems) = preProject
 		dev-notes-001.md = dev-notes-001.md
+		_Documentation\dummy-file-test-pr.txt = _Documentation\dummy-file-test-pr.txt
 		_Documentation\scratch-pad.txt = _Documentation\scratch-pad.txt
 	EndProjectSection
 EndProject
