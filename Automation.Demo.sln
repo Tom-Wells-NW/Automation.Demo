@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Demo.TestHarness_01", "Automation.Demo.TestHarness_01\Automation.Demo.TestHarness_01.csproj", "{AD721DE6-68FB-4B4D-9B9E-4E8FDD526E2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automation.Demo.TestHarness_01", "Automation.Demo.TestHarness_01\Automation.Demo.TestHarness_01.csproj", "{AD721DE6-68FB-4B4D-9B9E-4E8FDD526E2C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documentation", "_Documentation", "{EED74AFF-E9A0-4087-ABAB-F4DB0F1C5351}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,13 +12,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documentation", "_Document
 		_Documentation\scratch-pad.txt = _Documentation\scratch-pad.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Demo.TestHarness_02", "Automation.Demo.TestHarness_02\Automation.Demo.TestHarness_02.csproj", "{E412D765-EE16-400E-B933-F6DC5029D806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automation.Demo.TestHarness_02", "Automation.Demo.TestHarness_02\Automation.Demo.TestHarness_02.csproj", "{E412D765-EE16-400E-B933-F6DC5029D806}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Demo.Client", "Automation.Demo.Client\Automation.Demo.Client.csproj", "{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automation.Demo.Client", "Automation.Demo.Client\Automation.Demo.Client.csproj", "{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{70AABB3B-F491-42CF-891E-A7EE9B852FE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Demo.Client.UnitTests", "Tests\Automation.Demo.Client.UnitTests\Automation.Demo.Client.UnitTests.csproj", "{8ED8CCC6-BC0C-4655-8206-011506A5F01A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automation.Demo.Client.UnitTests", "Tests\Automation.Demo.Client.UnitTests\Automation.Demo.Client.UnitTests.csproj", "{80E46ED0-6113-4D43-B5C6-0A2EE2139225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fss.FlaUI.NUnitTests", "Tests\Fss.FlaUI.NUnitTests\Fss.FlaUI.NUnitTests.csproj", "{28415E2C-A27A-407E-BC94-681C6B854879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fss.FlaUI.Extensions.MSUnitTests", "Tests\Fss.FlaUI.Extensions.MSUnitTests\Fss.FlaUI.Extensions.MSUnitTests.csproj", "{0C53316C-5A82-4838-BB19-B4488CDFCDF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlaUI.Adapter.Fss", "FlaUI.Adapter.Fss\FlaUI.Adapter.Fss.csproj", "{664643AF-0F18-4FBE-B9E5-DAB41146A777}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,16 +44,30 @@ Global
 		{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8ED8CCC6-BC0C-4655-8206-011506A5F01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8ED8CCC6-BC0C-4655-8206-011506A5F01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8ED8CCC6-BC0C-4655-8206-011506A5F01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8ED8CCC6-BC0C-4655-8206-011506A5F01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E46ED0-6113-4D43-B5C6-0A2EE2139225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E46ED0-6113-4D43-B5C6-0A2EE2139225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E46ED0-6113-4D43-B5C6-0A2EE2139225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E46ED0-6113-4D43-B5C6-0A2EE2139225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28415E2C-A27A-407E-BC94-681C6B854879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28415E2C-A27A-407E-BC94-681C6B854879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28415E2C-A27A-407E-BC94-681C6B854879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28415E2C-A27A-407E-BC94-681C6B854879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C53316C-5A82-4838-BB19-B4488CDFCDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C53316C-5A82-4838-BB19-B4488CDFCDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C53316C-5A82-4838-BB19-B4488CDFCDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C53316C-5A82-4838-BB19-B4488CDFCDF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8ED8CCC6-BC0C-4655-8206-011506A5F01A} = {70AABB3B-F491-42CF-891E-A7EE9B852FE0}
+		{80E46ED0-6113-4D43-B5C6-0A2EE2139225} = {70AABB3B-F491-42CF-891E-A7EE9B852FE0}
+		{28415E2C-A27A-407E-BC94-681C6B854879} = {70AABB3B-F491-42CF-891E-A7EE9B852FE0}
+		{0C53316C-5A82-4838-BB19-B4488CDFCDF7} = {70AABB3B-F491-42CF-891E-A7EE9B852FE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F5D5510-2664-4108-8B7F-A6D7D59C18F1}
