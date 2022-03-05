@@ -1,15 +1,35 @@
-﻿using System;
+﻿using FlaUI.Adapter.Fss.Helpers;
+using System;
 using System.Diagnostics;
 
 namespace FlaUI.Adapter.Fss
 {
     public class FlaUiApplicationFactory
     {
-        public FlaUiApplication AttachOrCreate(string applicationPath, TimeSpan applicationLaunchWaitTime)
+        private readonly ISpecificProcessDetectorFactory _processDetectorFactory;
+        public FlaUiApplicationFactory(ISpecificProcessDetectorFactory processDetectorFactory)
+        {
+            _processDetectorFactory = processDetectorFactory;
+        }
+
+        public FlaUiApplication AttachOrCreate(string applicationPath, double applicationLaunchWaitTimeInSeconds = 3.0)
         {
             var processStartInfo = CreateProcessStartInfo(applicationPath);
+            var applicationLaunchWaitTime = TimeSpan.FromSeconds(Math.Abs(applicationLaunchWaitTimeInSeconds));
+
             var result = new FlaUiApplication(processStartInfo, applicationLaunchWaitTime);
-            WaitForProccessIfNotRunning(applicationPath);
+            var specificProcessDetector = _processDetectorFactory.Create(applicationPath);
+            specificProcessDetector.WaitForProcess(30, 0.3);
+            return result;
+        }
+
+        public FlaUiApplication Create(string applicationPath, double applicationLaunchWaitTimeInSeconds = 3.0)
+        {
+            var applicationLaunchWaitTime = TimeSpan.FromSeconds(Math.Abs(applicationLaunchWaitTimeInSeconds));
+
+            var result = new FlaUiApplication(applicationPath, applicationLaunchWaitTime);
+            var specificProcessDetector = _processDetectorFactory.Create(applicationPath);
+            specificProcessDetector.WaitForProcess(30, 0.3);
             return result;
         }
 
@@ -17,11 +37,6 @@ namespace FlaUI.Adapter.Fss
         {
             var result = new ProcessStartInfo(applicationPath);
             return result;
-        }
-
-        private void WaitForProccessIfNotRunning(string applicationPath, double timeoutInSeconds = 15)
-        {
-            // TODO: Implement here
         }
     }
 }
