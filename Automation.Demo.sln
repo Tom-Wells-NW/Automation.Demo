@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automation.Demo.TestHarness_01", "Automation.Demo.TestHarness_01\Automation.Demo.TestHarness_01.csproj", "{AD721DE6-68FB-4B4D-9B9E-4E8FDD526E2C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documentation", "_Documentation", "{EED74AFF-E9A0-4087-ABAB-F4DB0F1C5351}"
 	ProjectSection(SolutionItems) = preProject
 		dev-notes-001.md = dev-notes-001.md
@@ -12,21 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documentation", "_Document
 		_Documentation\scratch-pad.txt = _Documentation\scratch-pad.txt
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automation.Demo.TestHarness_02", "Automation.Demo.TestHarness_02\Automation.Demo.TestHarness_02.csproj", "{E412D765-EE16-400E-B933-F6DC5029D806}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automation.Demo.Client", "Automation.Demo.Client\Automation.Demo.Client.csproj", "{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{70AABB3B-F491-42CF-891E-A7EE9B852FE0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automation.Demo.Client.UnitTests", "Tests\Automation.Demo.Client.UnitTests\Automation.Demo.Client.UnitTests.csproj", "{80E46ED0-6113-4D43-B5C6-0A2EE2139225}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fss.FlaUI.NUnitTests", "Tests\Fss.FlaUI.NUnitTests\Fss.FlaUI.NUnitTests.csproj", "{28415E2C-A27A-407E-BC94-681C6B854879}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlaUI.Adapter.Fss", "FlaUI.Adapter.Fss\FlaUI.Adapter.Fss.csproj", "{664643AF-0F18-4FBE-B9E5-DAB41146A777}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlaUI.Adapter.Fss.MSUnitTests", "Tests\FlaUI.Adapter.Fss.MSUnitTests\FlaUI.Adapter.Fss.MSUnitTests.csproj", "{3C92681A-224F-4F98-ACEA-BCBD9632EFB1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solution files", "_solution files", "{CFF1C120-B00D-46AC-A968-2EAD54D4AB5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlaUI.Adapter.Fss.TestHarness_01", "FlaUI.Adapter.Fss.TestHarness_01\FlaUI.Adapter.Fss.TestHarness_01.csproj", "{0B7A0CAA-83E9-46A6-B60F-324BEEC19CBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlaUI.Adapter.Fss.Specs", "FlaUI.Adapter.Fss.Specs\FlaUI.Adapter.Fss.Specs.csproj", "{096F0149-47BF-4268-B441-EDFC28DFD497}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,46 +22,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD721DE6-68FB-4B4D-9B9E-4E8FDD526E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD721DE6-68FB-4B4D-9B9E-4E8FDD526E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD721DE6-68FB-4B4D-9B9E-4E8FDD526E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD721DE6-68FB-4B4D-9B9E-4E8FDD526E2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E412D765-EE16-400E-B933-F6DC5029D806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E412D765-EE16-400E-B933-F6DC5029D806}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E412D765-EE16-400E-B933-F6DC5029D806}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E412D765-EE16-400E-B933-F6DC5029D806}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED5699FB-45FE-4F51-B44C-698DEC68AEF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{80E46ED0-6113-4D43-B5C6-0A2EE2139225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80E46ED0-6113-4D43-B5C6-0A2EE2139225}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80E46ED0-6113-4D43-B5C6-0A2EE2139225}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80E46ED0-6113-4D43-B5C6-0A2EE2139225}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28415E2C-A27A-407E-BC94-681C6B854879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28415E2C-A27A-407E-BC94-681C6B854879}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28415E2C-A27A-407E-BC94-681C6B854879}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28415E2C-A27A-407E-BC94-681C6B854879}.Release|Any CPU.Build.0 = Release|Any CPU
 		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C92681A-224F-4F98-ACEA-BCBD9632EFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C92681A-224F-4F98-ACEA-BCBD9632EFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C92681A-224F-4F98-ACEA-BCBD9632EFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C92681A-224F-4F98-ACEA-BCBD9632EFB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B7A0CAA-83E9-46A6-B60F-324BEEC19CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B7A0CAA-83E9-46A6-B60F-324BEEC19CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B7A0CAA-83E9-46A6-B60F-324BEEC19CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B7A0CAA-83E9-46A6-B60F-324BEEC19CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{80E46ED0-6113-4D43-B5C6-0A2EE2139225} = {70AABB3B-F491-42CF-891E-A7EE9B852FE0}
-		{28415E2C-A27A-407E-BC94-681C6B854879} = {70AABB3B-F491-42CF-891E-A7EE9B852FE0}
-		{3C92681A-224F-4F98-ACEA-BCBD9632EFB1} = {70AABB3B-F491-42CF-891E-A7EE9B852FE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F5D5510-2664-4108-8B7F-A6D7D59C18F1}

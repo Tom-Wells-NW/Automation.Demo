@@ -10,9 +10,7 @@ namespace FlaUI.Adapter.Fss
     {
         public PageObjectBase() { }
 
-        public FlaUiApplication ApplicationUnderTest { get; set; }
-        public Window Window { get; set; }
-        public ConditionFactory By { get; set; }
+        private Window _window;
 
         protected void TryAction(Action action, bool throwException = false, [CallerMemberName] string memberName = "")
         {

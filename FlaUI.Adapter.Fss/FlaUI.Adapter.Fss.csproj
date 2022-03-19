@@ -1,10 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <AssemblyName>FlaUI.Adapter.Fss</AssemblyName>
     <RootNamespace>FlaUI.Adapter.Fss</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Obsolete_Code\FlaUiApplication.cs" />
+    <Compile Remove="Obsolete_Code\FlaUiApplicationFactory.cs" />
+    <Compile Remove="Obsolete_Code\IFlaUiApplication.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Obsolete_Code\FlaUiApplication.cs" />
+    <Content Include="Obsolete_Code\FlaUiApplicationFactory.cs" />
+    <Content Include="Obsolete_Code\IFlaUiApplication.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FlaUI.Core" Version="3.2.0" />
