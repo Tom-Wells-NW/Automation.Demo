@@ -1,0 +1,39 @@
+
+
+
+MS Build 
+    <AppendTargetFrameworkToOutputPath> and <AppendRuntimeIdentifierToOutputPath> elements
+    https://docs.microsoft.com/en-us/visualstudio/ide/how-to-change-the-build-output-directory?view=vs-2022
+    https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#appendtargetframeworktooutputpath
+
+    <PlatformTarget> element
+    https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-target-framework-and-target-platform?view=vs-2022
+
+Pre-Build Evenet and Post-Build Event
+https://docs.microsoft.com/en-us/visualstudio/ide/reference/build-events-page-project-designer-csharp?view=vs-2022
+https://docs.microsoft.com/en-us/visualstudio/ide/how-to-specify-build-events-csharp?view=vs-2022
+https://docs.microsoft.com/en-us/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box?view=vs-2022
+https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/rmdir
+https://stackoverflow.com/questions/7331056/how-to-delete-a-folder-and-all-contents-using-a-bat-file-in-windows
+
+
+
+  
+  <PropertyGroup>
+    <RunSettingsFilePath>$(MSBuildProjectDirectory)\uia-integration.runsettings</RunSettingsFilePath>
+    <BaseOutputPath>..\build\UI_Integration_Tests</BaseOutputPath>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <OutputPath>..\build\UI_Integration_Tests</OutputPath>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <OutputPath>..\build\UI_Integration_Tests</OutputPath>
+  </PropertyGroup>

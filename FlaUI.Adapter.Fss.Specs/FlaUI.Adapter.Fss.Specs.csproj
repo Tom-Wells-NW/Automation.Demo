@@ -4,28 +4,35 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   
   <PropertyGroup>
-    <RunSettingsFilePath>$(MSBuildProjectDirectory)\uia-integration.runsettings</RunSettingsFilePath>
+    <!--<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>-->
+    <!--<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>-->
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0-preview-20220131-20" />
-    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
-    <PackageReference Include="SpecFlow.NUnit" Version="3.9.52" />
+    <PackageReference Include="FlaUI.UIA3" Version="3.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0-preview-20220301-01" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.58" />
     <PackageReference Include="nunit" Version="3.13.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
     <PackageReference Include="FluentAssertions" Version="6.5.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Drivers\" />
-    <Folder Include="Support\" />
+    <ProjectReference Include="..\FlaUI.Adapter.Fss\FlaUI.Adapter.Fss.csproj">
+      <CopyLocal>True</CopyLocal>
+    </ProjectReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\FlaUI.Adapter.Fss\FlaUI.Adapter.Fss.csproj" />
-  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="echo&#xD;&#xA;echo -----------------------------------------------------&#xD;&#xA;echo Pre-Build Event&#xD;&#xA;echo    ProjectDir:     $(ProjectDir) &#xD;&#xA;echo    TestResultsDir: $(ProjectDir)TestResults&#xD;&#xA;echo -----------------------------------------------------&#xD;&#xA;&#xD;&#xA;" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="echo&#xD;&#xA;echo -----------------------------------------------------&#xD;&#xA;echo Post-Build Event&#xD;&#xA;echo    ProjectDir:     $(ProjectDir) &#xD;&#xA;echo    TestResultsDir: $(ProjectDir)TestResults&#xD;&#xA;echo -----------------------------------------------------&#xD;&#xA;echo&#xD;&#xA;" />
+  </Target>
 
 </Project>

@@ -13,23 +13,36 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlaUI.Adapter.Fss", "FlaUI.Adapter.Fss\FlaUI.Adapter.Fss.csproj", "{664643AF-0F18-4FBE-B9E5-DAB41146A777}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solution files", "_solution files", "{CFF1C120-B00D-46AC-A968-2EAD54D4AB5B}"
+	ProjectSection(SolutionItems) = preProject
+		uia-integration.runsettings = uia-integration.runsettings
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlaUI.Adapter.Fss.Specs", "FlaUI.Adapter.Fss.Specs\FlaUI.Adapter.Fss.Specs.csproj", "{096F0149-47BF-4268-B441-EDFC28DFD497}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|Any CPU.Build.0 = Debug|x64
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|x64.ActiveCfg = Debug|x64
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Debug|x64.Build.0 = Debug|x64
 		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Release|Any CPU.Build.0 = Release|Any CPU
-		{096F0149-47BF-4268-B441-EDFC28DFD497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{096F0149-47BF-4268-B441-EDFC28DFD497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Release|x64.ActiveCfg = Release|x64
+		{664643AF-0F18-4FBE-B9E5-DAB41146A777}.Release|x64.Build.0 = Release|x64
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Debug|Any CPU.Build.0 = Debug|x64
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Debug|x64.Build.0 = Debug|Any CPU
 		{096F0149-47BF-4268-B441-EDFC28DFD497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{096F0149-47BF-4268-B441-EDFC28DFD497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Release|x64.ActiveCfg = Release|Any CPU
+		{096F0149-47BF-4268-B441-EDFC28DFD497}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

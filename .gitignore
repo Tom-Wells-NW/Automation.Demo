@@ -364,3 +364,4 @@ FodyWeavers.xsd
 
 # Custom - Test Project Build location
 build/
+**/TestResults/
